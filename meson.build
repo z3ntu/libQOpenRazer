@@ -1,10 +1,10 @@
 project('libopenrazer',
         'cpp',
         version : '0.3.0',
-        default_options : ['cpp_std=c++11'])
+        default_options : ['cpp_std=c++17'])
 
-qt = import('qt5')
-qt_dep = dependency('qt5', modules : ['Core', 'DBus', 'Gui', 'Xml'])
+qt = import('qt6')
+qt_dep = dependency('qt6', modules : ['Core', 'DBus', 'Gui', 'Xml'])
 
 if build_machine.system() == 'darwin'
   libopenrazer_data_dir = 'Contents/Resources'

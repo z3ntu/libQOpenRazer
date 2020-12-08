@@ -2,11 +2,8 @@ image: freebsd/latest
 packages:
   - meson
   - pkgconf
-  - qt5-buildtools
-  - qt5-dbus
-  - qt5-linguisttools
-  - qt5-widgets
-  - qt5-xml
+  - qt6-base
+  - qt6-tools
 sources:
   - https://github.com/z3ntu/libopenrazer
 tasks:
